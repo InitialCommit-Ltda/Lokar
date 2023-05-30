@@ -6,6 +6,5 @@
     <title>Lokar</title>
   </head>
   <body>
-    <h1>Lokar</h1>
   </body>
 </html>
