@@ -3,12 +3,14 @@ import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import Header from './components/Header';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
