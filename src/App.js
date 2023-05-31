@@ -1,19 +1,22 @@
-import logo from './assets/img/logo.png';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Contato from './pages/Contato';
+import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Em construção
-        </h1>
-        <p>
-          Edite <code>src/App.js</code> e salve para recarregar.
-        </p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
