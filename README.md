@@ -20,34 +20,6 @@ Hospedagem: Hostgator
 Banco: PostgreSQL
 
 -----
-src/ (pasta raiz do código-fonte)
-index.js: Ponto de entrada do aplicativo React.
-App.js: Componente principal que define a estrutura geral do aplicativo.
-assets/ (pasta para arquivos estáticos, como imagens, ícones, etc.)
-components/ (pasta para componentes reutilizáveis)
-Header.js: Componente do cabeçalho do site.
-Footer.js: Componente do rodapé do site.
-Button.js: Componente de botão reutilizável.
-...
-pages/ (pasta para as páginas principais do site)
-Home.js: Componente da página inicial.
-Login.js: Componente da página de login.
-Signup.js: Componente da página de cadastro.
-Contact.js: Componente da página de contato.
-...
-services/ (pasta para serviços de backend ou APIs)
-api.js: Arquivo para configuração e chamadas à API.
-styles/ (pasta para arquivos de estilo)
-global.css: Estilos globais do aplicativo.
-components.css: Estilos específicos dos componentes.
-pages.css: Estilos específicos das páginas.
-utils/ (pasta para funções utilitárias ou helpers)
-formatDate.js: Função para formatar datas.
-...
-App.test.js: Arquivo de teste automatizado do aplicativo.
-reportWebVitals.js: Arquivo para métricas de desempenho.
-...
------
 # REACT: Info
 -----
 # Getting Started with Create React App
