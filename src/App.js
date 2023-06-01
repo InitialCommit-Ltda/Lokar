@@ -4,7 +4,7 @@ import Contato from './pages/Contato';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Header from './components/Header';
-import './styles/global.css';
+
 
 function App() {
   return (
