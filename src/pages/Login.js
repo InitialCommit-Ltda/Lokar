@@ -1,13 +1,22 @@
+import '../styles/pages.css'
+
 function Login() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>
+                <h1 className="campoLogin">
                     LOGIN
                 </h1>
                 <p>
                     Edite: <code>src/pages/Login.js</code>
                 </p>
+                <form>
+                    <input type='text'>
+                    </input>
+                    <button>
+                        Login
+                    </button>
+                </form>
             </header>
         </div>
     );
