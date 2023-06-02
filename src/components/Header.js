@@ -13,12 +13,12 @@ function Header() {
     return (
         <header className="header">
             <div className="row">
-                <div className="logo-container col-2">
+                <div className="logo-container col-2 offset-1">
                     <Link to="/">
                         <img src={logo} className="logo" alt="logo" />
                     </Link>
                 </div>
-                <nav className={`nav col-9 ${menuOpen ? 'open' : ''}`}>
+                <nav className={`nav col-8 ${menuOpen ? 'open' : ''}`}>
                     <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                         <li className="nav-item">
                             <Link to="/">Home</Link>
