@@ -2,19 +2,13 @@ function Login() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>
-                    LOGIN
-                </h1>
-                <p>
-                    Edite: <code>src/pages/Login.js</code>
-                </p>
-                <form>
-                    <input type='text'>
-                    </input>
-                    <button>
-                        Login
-                    </button>
-                </form>
+        <h1>Login</h1>
+        <label for="email">E-mail</label>
+        <input type="email"></input>
+        <label for="senha">Senha</label>
+        <input type="password"></input>
+        <button>Acessar</button>
+        <button>Cadastrar</button>
             </header>
         </div>
     );
