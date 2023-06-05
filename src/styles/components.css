@@ -17,6 +17,11 @@
   height: 100px;
 }
 
+.user {
+  height: 20px;
+  margin-top: -5px;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;

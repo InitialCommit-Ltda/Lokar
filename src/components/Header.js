@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import logo from '../assets/img/logo.png';
+import user from '../assets/icon/user.svg'
 import '../styles/components.css';
 
 function Header() {
@@ -27,10 +28,8 @@ function Header() {
                             <Link to="/contato">Contato</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/login">Login</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/cadastro">Cadastro</Link>
+
+                            <Link to="/login"><img src={user} className="user" alt="user" /> Login</Link>
                         </li>
                     </ul>
                     <div className="menu-toggle" onClick={toggleMenu}>
