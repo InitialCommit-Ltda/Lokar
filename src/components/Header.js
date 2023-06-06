@@ -13,7 +13,31 @@ function Header() {
 
     return (
         <header className="header">
-            <div className="row">
+            <div className="blank-space" />
+            <div className="logo">
+                <Link to="/">
+                    <img src={logo} className="logo" alt="logo" />
+                </Link>
+            </div>
+            <nav className="nav-list">
+                <li className="nav-item">
+                    <Link to="/">Home</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/contato">Contato</Link>
+                </li>
+            </nav>
+            <div className="login-icon">
+                <Link to="/login">
+                    <img src={user} className="login-icon" alt="login" /> Login
+                </Link>
+            </div>
+            <div className="blank-space" />
+        </header>
+    );
+}
+/*
+    <div className="row">
                 <div className="logo-container col-2 offset-1">
                     <Link to="/">
                         <img src={logo} className="logo" alt="logo" />
@@ -29,7 +53,7 @@ function Header() {
                         </li>
                         <li className="nav-item">
 
-                            <Link to="/login"><img src={user} className="user" alt="user" /> Login</Link>
+                            <Link to="/login"><img src={user} className="login-icon" alt="login" /> Login</Link>
                         </li>
                     </ul>
                     <div className="menu-toggle" onClick={toggleMenu}>
@@ -39,8 +63,5 @@ function Header() {
                     </div>
                 </nav>
             </div>
-        </header>
-    );
-}
-
+*/
 export default Header;
