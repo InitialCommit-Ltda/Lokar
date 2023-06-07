@@ -7,23 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
 .App {
   text-align: center;
-  background-color: #282c34;
-}
-
-.App-header {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #cacfdb;
+  height: 100vh;
   color: white;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -32,4 +21,18 @@ code {
 
 .App-content {
   margin-top: 120px;
+}
+
+.Page {
+  margin-left: 15vh;
+  margin-right: 15vh;
+  background-color: #282c34;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .Page {
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+  }
 }
