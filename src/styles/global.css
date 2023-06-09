@@ -10,13 +10,9 @@ body {
 .App {
   text-align: center;
   background-color: #cacfdb;
-  height: 100vh;
+  min-height: calc(100vh - 120px);
   color: white;
   font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .App-content {
@@ -27,7 +23,7 @@ body {
   margin-left: 15vh;
   margin-right: 15vh;
   background-color: #282c34;
-  height: 100vh;
+  min-height: calc(100vh - 120px);
 }
 
 @media (max-width: 768px) {

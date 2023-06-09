@@ -1,15 +1,13 @@
-.container-busca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.login-cadastro {
+    font-size: large;
+    font-weight: 500;
 }
 
-.busca {
-    background-color: #677081;
-    height: 100px;
-    width: 50vw;
+.login-cadastro-link {
+    text-decoration: none;
+    color: #61dafb;
 }
 
-@media (max-width: 768px) {
+.login-cadastro-link:hover {
+    color: #ff0000;
 }

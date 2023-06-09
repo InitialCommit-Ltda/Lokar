@@ -1,7 +1,7 @@
 function Cadastro() {
     return (
         <div className="App">
-            <header className="App-header">
+            <header className="Page">
                 
                 <h1>
                     CADASTRO
