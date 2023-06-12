@@ -27,7 +27,8 @@
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, .4);
     gap: 5px;
-    width: 35%;
+    width: 35vw;
+    min-width: 300px;
 }
 
 .formLogin h1{
