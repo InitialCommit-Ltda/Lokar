@@ -41,7 +41,7 @@ function Home() {
 
             <div className='Page-content'>
                 <p className='teste'>
-                    HOME
+                    TESTE
                 </p>
             </div>
         </div>
