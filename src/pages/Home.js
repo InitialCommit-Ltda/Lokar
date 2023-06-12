@@ -17,7 +17,7 @@ function Home() {
             
             <div className="carousel">
                 <h1>
-                    <Link to="/cadastro">CAROUSEL</Link>
+                    CAROUSEL
                 </h1>
             </div>
             
