@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/pages/home.css'
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
             
             <div className="carousel">
                 <h1>
-                    CAROUSEL
+                    <Link to="/cadastro">CAROUSEL</Link>
                 </h1>
             </div>
             
