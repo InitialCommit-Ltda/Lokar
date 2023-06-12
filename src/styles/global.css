@@ -24,6 +24,9 @@ body {
   margin-right: 15vh;
   background-color: #282c34;
   min-height: calc(100vh - 120px);
+}
+
+.Page-content {
   display: flex;
   flex-direction: column;
   align-items: center;

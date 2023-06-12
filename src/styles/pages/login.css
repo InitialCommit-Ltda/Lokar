@@ -22,7 +22,7 @@
 .formLogin {
     display: flex;
     flex-direction: column;
-    background-color:rgb(73, 69, 69);
+    background-color:#494545;
     border-radius: 7px;
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, .4);
