@@ -39,10 +39,9 @@ function Home() {
                 </Slider>
             </div>
 
-            <div className='Page-content'>
-                <p className='teste'>
-                    TESTE
-                </p>
+            <div className="Home-content">
+                <div className="grid">
+                </div>
             </div>
         </div>
     );

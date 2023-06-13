@@ -34,7 +34,7 @@ function Header() {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
-      const breakpoint = 768; // Defina o tamanho do breakpoint aqui
+      const breakpoint = 768;
 
       setShowHamburgerButton(windowWidth <= breakpoint);
 
@@ -43,7 +43,7 @@ function Header() {
       }
     };
 
-    handleResize(); // Verificar o tamanho da janela no carregamento inicial
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -53,7 +53,7 @@ function Header() {
   }, [closeMenu, showHamburgerButton]);
 
   const handleMenuButtonClick = (event) => {
-    event.stopPropagation(); // Impede a propagação do evento de clique
+    event.stopPropagation();
     toggleMenu();
   };
 
