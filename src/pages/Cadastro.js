@@ -13,7 +13,7 @@ function Cadastro() {
                         <input type="text" placeholder="E-mail"></input>
                     </p>
                     <p>
-                        <input type="Text" placeholder="Password"></input>
+                        <input type="password" placeholder="Password"></input>
                     </p>
                     <button id="meuBotao">Finalizar</button>
                 </div>
