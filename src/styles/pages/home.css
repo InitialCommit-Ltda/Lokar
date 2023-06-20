@@ -2,9 +2,10 @@
     width: 100%;
     height: 30vh;
     background-color: #494545;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.slick-dots {
+    bottom: 10px;
 }
 
 .slick-prev {
@@ -14,6 +15,16 @@
 
 .slick-next {
     right: 10px;
+}
+
+.slides {
+    height: 30vh;
+    text-align: center;
+}
+
+.slides img {
+    height: 100%;
+    display: inline-block;
 }
 
 .Home-content {
@@ -26,3 +37,4 @@
 .grid {
     display: grid;
 }
+
