@@ -4,7 +4,6 @@ import Contato from './pages/Contato';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Header from './components/Header';
-import LoginAPI from './pages/LoginAPI';
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
             <Route path="/contato" element={<Contato />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/loginapi" element={<LoginAPI />} />
           </Routes>
         </div>
       </div>
