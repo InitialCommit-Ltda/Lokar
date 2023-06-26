@@ -19,9 +19,9 @@ function Home() {
             <div className="container-busca" style={{ display: 'none' }}>
                 <div className="busca">
                     <form>
-                        <label for='dtAluguel'>Data:</label>
+                        <label htmlFor='dtAluguel'>Data:</label>
                         <input type='date' placeholder='Data' id='dtAluguel' /><br />
-                        <label for='dtRetorno'>Retorno:</label>
+                        <label htmlFor='dtRetorno'>Retorno:</label>
                         <input type='date' id='dtRetorno' />
                     </form>
                 </div>
