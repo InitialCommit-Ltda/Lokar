@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://lokar.ddns.net:8099/',
+  //baseURL: 'http://lokar.ddns.net:8099/',
+  baseURL: 'http://localhost:3001/',
 });
 
 export const login = async (email, senha) => {
