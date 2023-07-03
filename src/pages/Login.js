@@ -26,10 +26,10 @@ function Login() {
                 <div className='Page-content'>
                     <h1>Login</h1>
                     <form onSubmit={handleFormSubmit} className="formLogin">
-                        <label htmlFor="email">E-mail</label>
+                        <label htmlFor="email">E-mail/Usuário</label>
                         <input
-                            type="email"
-                            autoComplete='username'
+                            type="text"
+                            autoComplete='email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />

@@ -14,4 +14,13 @@ export const login = async (email, senha) => {
   }
 };
 
+export const cadastro = async (nome, sobrenome, telefone, email, usuario, senha) => {
+  try {
+    const response = await api.post('/cadastro', { nome, sobrenome, telefone, email, usuario, senha });
+    return response.data;
+  } catch (error) {
+    throw new Error('Erro na comuncação com a API: Não foi possível estabelecer conexão com o servidor');
+  }
+};
+
 export default api;
