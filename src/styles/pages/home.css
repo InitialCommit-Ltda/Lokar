@@ -1,3 +1,33 @@
+.container-busca {
+    background-color: #494545a9;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label-cell,
+.input-cell {
+    flex-basis: 25%;
+    padding: 5px;
+}
+
+.label-cell {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.input-cell input {
+    width: 100%;
+}
+
 .carousel {
     width: 100%;
     height: 30vh;

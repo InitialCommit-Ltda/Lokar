@@ -11,20 +11,38 @@ function Home() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
     };
 
     return (
         <div className="Page">
-            <div className="container-busca" style={{ display: 'none' }}>
-                <div className="busca">
-                    <form>
-                        <label htmlFor='dtAluguel'>Data:</label>
-                        <input type='date' placeholder='Data' id='dtAluguel' /><br />
-                        <label htmlFor='dtRetorno'>Retorno:</label>
-                        <input type='date' id='dtRetorno' />
-                    </form>
-                </div>
+            <div className="container-busca">
+                <form>
+                    <div className="form-row">
+                        <div className="label-cell">
+                            <label htmlFor="inputLocal">Local:</label>
+                        </div>
+                        <div className="label-cell">
+                            <label htmlFor="inputRetirada">Data de retirada:</label>
+                        </div>
+                        <div className="label-cell">
+                            <label htmlFor="inputDevolucao">Data de devolução:</label>
+                        </div>
+                    </div>
+                    <div className="form-row">
+                        <div className="input-cell">
+                            <input type="text" id="inputLocal" />
+                        </div>
+                        <div className="input-cell">
+                            <input type="date" id="inputRetirada" />
+                        </div>
+                        <div className="input-cell">
+                            <input type="date" id="inputDevolucao" />
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <div className="carousel">
