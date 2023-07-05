@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import FloatingInput from '../utils/floatingInput';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -16,30 +20,51 @@ function Home() {
         autoplaySpeed: 5000
     };
 
+    const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndDate] = useState(null);
+
+    const handleStartDateChange = (date) => {
+        setStartDate(date);
+    };
+
+    const handleEndDateChange = (date) => {
+        setEndDate(date);
+    };
+
     return (
         <div className="Page">
             <div className="container-busca">
                 <form>
                     <div className="form-row">
-                        <div className="label-cell">
-                            <label htmlFor="inputLocal">Local:</label>
-                        </div>
-                        <div className="label-cell">
-                            <label htmlFor="inputRetirada">Data de retirada:</label>
-                        </div>
-                        <div className="label-cell">
-                            <label htmlFor="inputDevolucao">Data de devolução:</label>
-                        </div>
-                    </div>
-                    <div className="form-row">
                         <div className="input-cell">
-                            <input type="text" id="inputLocal" />
+                            <FloatingInput label="Local de retirada" id="inputLocal" type="text" autoComplete="off" />
                         </div>
                         <div className="input-cell">
-                            <input type="date" id="inputRetirada" />
+                            <FloatingInput
+                                label="Data de retirada"
+                                type="datepicker"
+                                selected={startDate}
+                                onChange={handleStartDateChange}
+                                minDate={new Date()}
+                                maxDate={endDate}
+                            />
                         </div>
                         <div className="input-cell">
-                            <input type="date" id="inputDevolucao" />
+                            <FloatingInput
+                                label="Data de devolução"
+                                type="datepicker"
+                                selected={endDate}
+                                onChange={handleEndDateChange}
+                                minDate={startDate}
+                                dayClassName={(date) => {
+                                if (startDate && endDate) {
+                                    if (date > startDate && date < endDate) {
+                                    return 'between-dates';
+                                    }
+                                }
+                                return '';
+                                }}
+                            />
                         </div>
                     </div>
                 </form>

@@ -1,7 +1,7 @@
 .container-busca {
     background-color: #494545a9;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,19 +13,18 @@
     justify-content: space-between;
 }
 
-.label-cell,
 .input-cell {
     flex-basis: 25%;
     padding: 5px;
 }
 
-.label-cell {
-    white-space: nowrap;
-    text-align: left;
-}
-
 .input-cell input {
     width: 100%;
+}
+
+.between-dates,
+.react-datepicker__day--hover {
+  background-color: #ebebeb !important;
 }
 
 .carousel {
@@ -67,4 +66,3 @@
 .grid {
     display: grid;
 }
-

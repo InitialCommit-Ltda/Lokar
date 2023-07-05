@@ -1,0 +1,45 @@
+.floating-input {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: #ffffffac;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #282828;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .input-label.float {
+    top: -18px;
+    left: 6px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .floating-input.focused .input-label {
+    top: -18px;
+    left: 6px;
+    font-size: 12px;
+    color: #d4d4d4;
+  }
+  
+  .floating-input.focused .input-field,
+  .floating-input .input-field:not(:placeholder-shown) {
+    border-color: #2b2b2b;
+  }
+  
