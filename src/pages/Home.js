@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import FloatingInput from '../utils/floatingInput';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
